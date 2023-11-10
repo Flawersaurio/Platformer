@@ -8,6 +8,8 @@ public class Personaje : MonoBehaviour
     public int hpMax = 100;
     public int score = 0;
     public int vidas = 3;
+    public bool aturdido = false;
+    public bool muerto = false;
 
     public GameObject efectoSangrePrefab;
   
@@ -36,6 +38,11 @@ public class Personaje : MonoBehaviour
         //resto los puntos al HP actual
         hp = hp - puntos;
 
+        if (hp <= 0)
+        {
+            muerto = true;
+        }
+
         if (miAnimador != null)
         {
             miAnimador.SetTrigger("DAÑAR");
@@ -49,7 +56,17 @@ public class Personaje : MonoBehaviour
             misSonidos.reproducir("DAÑAR");
         }
 
+
+        aturdido = true;
+
+        Invoke("desaturdir", 1);
     }
+
+    private void desaturdir()
+    {
+        aturdido = false;
+    }
+
 
     public void matar(GameObject atacante)
     {

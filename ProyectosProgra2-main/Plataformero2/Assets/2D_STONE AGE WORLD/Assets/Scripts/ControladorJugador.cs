@@ -15,6 +15,7 @@ public class ControladorJugador : MonoBehaviour
     private Rigidbody2D MiCuerpo;
     private Animator miAnimador;
     private ReproductorSonidos misSonidos;
+    private Personaje miPersonaje;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class ControladorJugador : MonoBehaviour
         MiCuerpo = GetComponent<Rigidbody2D>();
         miAnimador = GetComponent<Animator>();
         misSonidos = GetComponent<ReproductorSonidos>();
-
+        miPersonaje = GetComponent<Personaje>();
     }
 
     // Update is called once per frame
@@ -56,7 +57,7 @@ public class ControladorJugador : MonoBehaviour
 
         if (enPiso == true)
         {
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Jump") && !miPersonaje.aturdido)
             {
                 print("Saltando");
                 MiCuerpo.AddForce(new Vector3(0, fuerzaSalto, 0),
@@ -82,7 +83,7 @@ public class ControladorJugador : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && !miPersonaje.aturdido)
         {//atacar
             miAnimador.SetTrigger("ATACAR");
         }

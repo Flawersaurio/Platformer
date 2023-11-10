@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4823805291647704428
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8922905106634855520, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: efectoSangrePrefab
+      value: 
+      objectReference: {fileID: 4553287630450876385, guid: 15483e51212e3d74886ea57291f4639a, type: 3}
+    - target: {fileID: 8922905106634855578, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_Name
+      value: Hongo (villano)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922905106634855578, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922905106634855580, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922905106634855580, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922905106634855580, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922905106634855580, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922905106634855580, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922905106634855580, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922905106634855580, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922905106634855580, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922905106634855580, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922905106634855580, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922905106634855580, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922905106634855581, guid: b7a70154a7b1447468efa8499a426822, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b7a70154a7b1447468efa8499a426822, type: 3}
